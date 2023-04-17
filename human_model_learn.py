@@ -4,7 +4,6 @@ from keras.optimizers import RMSprop
 
 path = 'human_dataset'
 
-
 def create_data_generators():
     data_gen = ImageDataGenerator(rescale=1 / 255, validation_split=0.2)
 
@@ -49,6 +48,7 @@ def train_model(model, train_dataset, validation_dataset):
 
     test_loss, test_acc = model.evaluate(validation_dataset, verbose=2)
     print('\nTest accuracy:', test_acc)
+    model.save('ripo_model')
 
 
 def main():

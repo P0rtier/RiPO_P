@@ -2,7 +2,6 @@ import os
 os.environ['KMP_DUPLICATE_LIB_OK']='True'
 import tensorflow_hub as hub
 import cv2
-import numpy
 import pandas as pd
 import tensorflow as tf
 import matplotlib.pyplot as plt
