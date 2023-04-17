@@ -45,8 +45,8 @@ model.compile(loss='binary_crossentropy',
               metrics=['accuracy'])
 
 model.fit = model.fit(train_dataset,
-                      steps_per_epoch=3,
-                      epochs=1,
+                      steps_per_epoch=10,
+                      epochs=10,
                       validation_data=validation_dataset
                       )
 
